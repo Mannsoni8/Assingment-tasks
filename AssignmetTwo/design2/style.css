@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding:30px 0;
+}
+
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+}
+
+.logo p{
+    font-size:24px;
+    font-weight:600;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:orangered;
+}
+
+.start-btn{
+    padding:12px 24px;
+    border:none;
+    border-radius:12px;
+    background:#1b1b1b;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.start-btn:hover{
+    background:orangered;
+}
+
+
+.heading{
+    text-align:center;
+    margin-top:80px;
+}
+
+.heading h1{
+    font-size:clamp(48px, 8vw, 100px);
+    margin-bottom:40px;
+}
+
+.filters{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.filters button{
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#1b1b1b;
+    color:white;
+    cursor:pointer;
+}
+
+.filters .active{
+    background:orangered;
+}
+
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:60px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:350px;
+    background:#0d0d0d;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.tag{
+    display:inline-block;
+    background:#3b1d14;
+    color:orange;
+    padding:8px 15px;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+.card-content h2{
+    font-size:28px;
+    line-height:1.4;
+    margin-bottom:20px;
+}
+
+.card-content p{
+    color:#888;
+}
+
