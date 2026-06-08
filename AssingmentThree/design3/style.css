@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(
+        135deg,
+        #160616,
+        #35051f,
+        #1d073a
+    );
+
+    color:white;
+    overflow:hidden;
+}
+
+.container{
+    width:90%;
+    margin:0 auto;
+    height:100vh;
+    position:relative;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo img{
+    width:100px;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu{
+    font-size:30px;
+    cursor:pointer;
+}
+
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:10px;
+    position:relative;
+}
+
+.left{
+    width:45%;
+}
+
+.title-logo{
+    width:220px;
+}
+
+.left p{
+    color:#ddd;
+    margin-bottom:5px;
+    font-size: 14px;
+    line-height:1.4;
+}
+
+.buttons{
+    display: flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.play-btn{
+    background:#ff4d8d;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+}
+
+.trailer-btn{
+    background:transparent;
+    border:1px solid #ff4d8d;
+    padding:12px 25px;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+}
+
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.guard{
+    width:420px;
+    
+}
+
+
+.container::before{
+    content:"GAME";
+
+    position:absolute;
+
+    left:0;
+    bottom:180px;
+
+    font-size:180px;
+    font-weight:bold;
+
+    color:rgba(255,255,255,0.05);
+
+    z-index:-1;
+}
+
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.card{
+    width:320px;
+    height:180px;
+
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+@media(max-width:900px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .guard{
+        position:static;
+        width:300px;
+        margin-top:30px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    .nav-links{
+        display:none;
+    }
+}
